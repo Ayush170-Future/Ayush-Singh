@@ -1,0 +1,269 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Ayush Singh} \\ \vspace{1pt}
+    MP, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-8889390560~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{\textcolor{blue}{ayushsingh.as1700@gmail.com}}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{\textcolor{blue}{LinkedIn}}}  ~
+    \href{https://github.com/Ayush170-Future}{\raisebox{-0.2\height}\faGithub\ \underline{\textcolor{blue}{Github}}}  ~
+     \href{https://codeforces.com/profile/AyushS_cg170}{\raisebox{-0.2\height}\faCode\ \underline{\textcolor{red}{Codeforces}}}  ~
+     \href{http://creativegiant.xyz/}{\raisebox{-0.2\height}\faGlobe\ \underline{\textcolor{blue}{creativegiant.xyz}}}  ~
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jabalpur Engineering College}{2020 -- Expected 2024}
+      {Bachelor of Technology in Information Technology | 3rd Year Student| Current CGPA: 8.89}{MP, IN}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& DBs:}{ Java, Solidity, Python, SQL, IPFS, Firebase} \\
+     \textbf{Developer Tools:}{ IntelliJ, VS Code, Remix} \\
+     \textbf{Frameworks \& Technologies}{: Django, Spring, web3.js, Git \& GitHub, Socket and Network Programming.} \\
+    }}
+     \textbf{Math Stack}{: Cryptography, Graph Theory, Data Structures \& Algorithms} \\
+    }}
+         \textbf{Courses taken}{: Cryptography, Computer Networks, Blockchain, DBMS, Distributed Systems-DHTs, Linux-kali, OS Basics} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Ayush170-Future/CreativeCoin-Blockchain--Distributed-Ledger-Protocol}{\textcolor{blue}{Blockchain Implementation}}} $|$ \emph{Python, Flask, REST APIs, Postman, Cryptography}}{August 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a Blockchain using Python and Flask.}
+            \resumeItem{It is a peer to peer direct payment system that uses proof-of-work as a consensus algorithm.}
+            \resumeItem{The network has three nodes with average time of nearly 1 second to mine a new block of transactions.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+      {{\href{https://github.com/Ayush170-Future/CreativeCoin-Blockchain--Distributed-Ledger-Protocol}{\textcolor{blue}{\textbf{Distance Vector Protocol Implementation}}}} $|$ \emph{Java, Computer Networks, Sockets, Graph Theory}}{February 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented Bellman-Ford Algorithm aka Distance Vector Protocol in java.}
+            \resumeItem{The project finds the shortest routing paths in a distributed network using UDP sockets, Multi-threading, and Multi-processing.}
+            
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+           {{\href{https://github.com/Ayush170-Future/Pastry-DHT}{\textcolor{blue}{\textbf{Pastry-DHT}}}} $|$ \emph{Java, Computer Networks, Distributed System, Multi-Threading, Hashing}}{April 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented a Distributed Hash Table in Java.}
+            \resumeItem{Pastry provides a constant look-up time(log(n)) similar to hashtables for the files in the cluster.}
+            \resumeItem{Files are stored in the form of key-value pair and can be efficiently retrieved by any node.}
+            \resumeItem{The nodes are connected in a circular fashion like a normal DHT, where they can communicate with each others using in-built protocols.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {{\href{http://immutable-ideas.herokuapp.com/}{\textcolor{blue}{\textbf{Immutable Ideas}}}} $|$ \emph{Solidity, Ethers.js}}{March 2022}
+          \resumeItemListStart
+            \resumeItem{The website lets you mint your project ideas on the blockchain so that you can prove you came up with the idea.}
+            \resumeItem{This was a hackathon team project, and my role was to code the backend in Solidity.}
+            \resumeItem{I used SVGs to convert text to image and then stored the image as an NFT on the blockchain.}
+            \resumeItem{More on this here: \href{https://github.com/Ayush170-Future/Immutable-Ideas-web3con}{\textcolor{blue}{Code}} and \href{https://www.youtube.com/watch?v=MR-SQJ1DZMo}{\textcolor{blue}{Demo video}}}
+          \resumeItemListEnd 
+\vspace{-15pt}
+\resumeProjectHeading
+ {{\href{https://github.com/Ayush170-Future/}{\textcolor{blue}{\textbf{Cloud Storage using IPFS}}}} $|$ \emph{Solidity, IPFS, React, web3.js}}{October 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a decentralized cloud storage.}
+            \resumeItem{The project uses IPFS to store files on their distributed system and returned CIDs are stored on Ethereum smart contract for transparency.}
+           
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+
+%-----------INVOLVEMENT---------------
+\section{Achievements}
+     \vspace{-10pt}
+          \resumeProjectHeading
+          {{\textbf{\textcolor{cyan}{Specialist} on \href{https://codeforces.com/profile/AyushS_cg170}{\textcolor{blue}{Codeforces}} with max-rating of 1500}.}\emph{}}{ }
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+ \vspace{+5pt}
+          \resumeProjectHeading
+          {\textbf{All India Rank of 49 in Codeforces Div2 Contest \#813.}  \emph{}}{ }
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+\vspace{+5pt}
+          \resumeProjectHeading
+          {{\textbf{Under top 50 teams in Flipkart Grid Information Security Challenge( Top 0.01\% ) }} \emph{}}{ }
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+\vspace{+5pt}
+          \resumeProjectHeading
+          {\textbf{Solved 500+ DSA-Math problems on \href{https://auth.geeksforgeeks.org/user/ayushsingh170/practice/}{\textcolor{blue}{GFG}}, \href{https://cses.fi/user/58477}{\textcolor{blue}{CSES}}, and Codeforces.}\emph{}}{ }
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+ 
+ \vspace{+5pt}
+          \resumeProjectHeading
+          {\textbf{Was under Top 50 developers in Polkadot APAC Hackathon 2021.}  \emph{}}{ }
+    \resumeSubHeadingListEnd
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+     \vspace{-10pt}
+          \resumeProjectHeading
+          {\textbf{Member of Technical Writers Team @ Developer DAO}  \emph{}}{October 2021 - Present}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+ \vspace{+5pt}
+          \resumeProjectHeading
+          {\textbf{Core Team member \& Events @ Google Developer Society JEC}  \emph{}}{October 2021 - Present}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\vspace{+5pt}
+          \resumeProjectHeading
+{\textbf{Guided Juniors on How to start Competitive Programming in an ACM society event.}  \emph{}}{August 2022}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+ 
+ \vspace{+5pt}
+          \resumeProjectHeading
+          {\textbf{Member @ Cryptographers}  \emph{}}{June 2021 - Present}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+ \vspace{+5pt}
+          \resumeProjectHeading
+          {\textbf{A Regular Attendee of Good Hackathons.}  \emph{}}{}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+\end{document}
